@@ -2,11 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; URL='https://odnodenki.com'" />
-    <title>Перенаправление...</title>
+    <meta http-equiv="refresh" content="2; URL='https://odnodenki.com'" />
+    <title>Загрузка…</title>
+    <style>
+      body {
+        background-color: white;
+        text-align: center;
+        padding-top: 100px;
+        font-family: sans-serif;
+        color: #888;
+      }
+      .dot {
+        font-size: 32px;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+    </style>
   </head>
   <body>
-    <p>Вы будете перенаправлены на <a href="https://odnodenki.com">odnodenki.com</a></p>
+    <p>Загрузка<span class="dot">…</span></p>
   </body>
 </html>
-
